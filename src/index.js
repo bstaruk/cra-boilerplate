@@ -4,9 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle } from 'style/globalStyle';
 import themePrimary from 'style/theme';
-
-import './index.css';
-import App from './App';
+import App from 'components/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
