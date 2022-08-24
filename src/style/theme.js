@@ -7,8 +7,8 @@ const theme = {
 
   /* Font Families */
   font: {
-    sans: 'sans-serif',
-    serif: 'serif',
+    sans: '"PT Sans", sans-serif',
+    serif: '"PT Serif", serif',
   },
 };
 
