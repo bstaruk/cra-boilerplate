@@ -6,10 +6,7 @@ import {
 import createSagaMiddleware from 'redux-saga';
 
 import { appSaga } from 'data/app/saga';
-import {
-  reducer as appReducer,
-  sliceKey as appSliceKey,
-} from 'data/app/slice';
+import { reducer as appReducer, sliceKey as appSliceKey } from 'data/app/slice';
 
 const sagaMiddleware = createSagaMiddleware();
 
