@@ -10,12 +10,10 @@ const Counter = () => {
   const count = useSelector(selectCount);
 
   const onMinusClick = () => {
-    console.log('onMinusClick'); // eslint-disable-line no-console
     dispatch(appActions.setCount(count - 1));
   };
 
   const onPlusClick = () => {
-    console.log('onPlusClick'); // eslint-disable-line no-console
     dispatch(appActions.setCount(count + 1));
   };
 
