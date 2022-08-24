@@ -19,7 +19,7 @@ const Counter = () => {
 
   return (
     <Wrapper>
-      <button type="button" onClick={onMinusClick}>
+      <button type="button" onClick={onMinusClick} disabled={count < 1}>
         -
       </button>
       <span>{count}</span>
