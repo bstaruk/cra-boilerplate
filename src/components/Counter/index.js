@@ -10,22 +10,26 @@ const Counter = () => {
   const count = useSelector(selectCount);
 
   const onMinusClick = () => {
-    console.log('onMinusClick');
-    dispatch(appActions.setCount(count - 1))
-  }
+    console.log('onMinusClick'); // eslint-disable-line no-console
+    dispatch(appActions.setCount(count - 1));
+  };
 
   const onPlusClick = () => {
-    console.log('onPlusClick');
-    dispatch(appActions.setCount(count + 1))
-  }
+    console.log('onPlusClick'); // eslint-disable-line no-console
+    dispatch(appActions.setCount(count + 1));
+  };
 
   return (
     <Wrapper>
-      <button type="button" onClick={onMinusClick}>-</button>
+      <button type="button" onClick={onMinusClick}>
+        -
+      </button>
       <span>{count}</span>
-      <button type="button" onClick={onPlusClick}>+</button>
+      <button type="button" onClick={onPlusClick}>
+        +
+      </button>
     </Wrapper>
   );
-}
+};
 
 export default Counter;
