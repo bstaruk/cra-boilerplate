@@ -1,3 +1,5 @@
+import { device, size } from './devices';
+
 const theme = {
   /* Colors */
   color: {
@@ -10,6 +12,10 @@ const theme = {
     sans: '"PT Sans", sans-serif',
     serif: '"PT Serif", serif',
   },
+
+  /* Sizes & Devices */
+  size,
+  device,
 };
 
 export default theme;

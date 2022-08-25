@@ -5,11 +5,20 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   height: 100vh;
-  padding: 24px;
+  padding: 12px;
+
+  @media ${p => p.theme.device.laptop} {
+    padding: 24px;
+  }
 
   > *:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @media ${p => p.theme.device.laptop} {
+      margin-bottom: 32px;
+    }
   }
 `;
