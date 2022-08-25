@@ -5,5 +5,9 @@ export const Wrapper = styled.div`
 
   > *:not(:last-child) {
     margin-right: 16px;
+
+    @media ${p => p.theme.device.laptop} {
+      margin-right: 24px;
+    }
   }
 `;
